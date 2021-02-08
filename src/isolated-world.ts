@@ -229,6 +229,7 @@ export class IsolatedWorld implements IsolationManager {
 
   /**
    * Exports key isolation modules.
+   * Note, due to the way these are generated they may not survive navigation.
    *
    * @return {ExposedModules}
    */

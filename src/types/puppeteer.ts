@@ -26,9 +26,7 @@ export {
 } from "puppeteer/lib/esm/puppeteer/common/FrameManager"
 
 export type ElementHandle = ElementHandleBase
-
 export type DOMWorld = DOMWorldBase & FrameBase
-
 export type CDPMethod = "Page.createIsolatedWorld" | "Runtime.evaluate"
 
 export interface CDPRequestLookup extends Record<CDPMethod | string, unknown> {
