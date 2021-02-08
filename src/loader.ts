@@ -1,4 +1,4 @@
-import { IsolatedWorld } from "./isolate"
+import { IsolatedWorld } from "./isolated-world"
 import { IsolationLoader, IsolationManager, Page, SecurePage } from "./types"
 
 /**

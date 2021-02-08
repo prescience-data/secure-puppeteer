@@ -1,6 +1,6 @@
 {
   "name": "secure-puppeteer",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Puppeteer utility class to provide access to an isolated world.",
   "keywords": [
     "puppeteer",
