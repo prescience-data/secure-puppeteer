@@ -19,6 +19,7 @@
   ],
   "scripts": {
     "build": "rimraf ./lib && tsc",
+    "pub": "npm run build && npm publish",
     "depcheck": "dependency-check ./package.json --verbose --ignore-module \"@types/*\" --nodev",
     "lint": "eslint . --ext .ts --fix",
     "sort": "sort-package-json",
