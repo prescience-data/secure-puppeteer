@@ -1,0 +1,49 @@
+{
+  "name": "secure-puppeteer",
+  "version": "0.1.0",
+  "description": "Puppeteer utility class to provide access to an isolated world.",
+  "keywords": [
+    "puppeteer",
+    "puppeteer-extra",
+    "isolated-world",
+    "execution-context"
+  ],
+  "bugs": "https://github.com/prescience-data/puppeteer-isolate/issues",
+  "repository": "https://github.com/prescience-data/puppeteer-isolate",
+  "license": "MIT",
+  "author": "0x00trace",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "rimraf ./lib && tsc",
+    "depcheck": "dependency-check ./package.json --verbose --ignore-module \"@types/*\" --nodev",
+    "lint": "eslint . --ext .ts --fix",
+    "sort": "sort-package-json",
+    "test": "nyc --extension .ts mocha --forbid-only --comp test/**/*.test.ts",
+    "upgrade": "npm-check-updates -u --packageFile package.json"
+  },
+  "dependencies": {
+    "devtools-protocol": "^0.0.850520",
+    "tslib": "^2.1.0"
+  },
+  "devDependencies": {
+    "@rushstack/eslint-config": "^2.3.2",
+    "@types/node": "^14.14.25",
+    "@types/puppeteer": "^5.4.3",
+    "@typescript-eslint/eslint-plugin": "^4.14.2",
+    "@typescript-eslint/parser": "^4.14.2",
+    "eslint": "^7.19.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "prettier": "^2.2.1",
+    "patch-package": "^6.2.2",
+    "puppeteer": "^5.5.0",
+    "sort-package-json": "^1.48.1",
+    "typescript": "4.1.3"
+  },
+  "optionalDependencies": {
+    "fsevents": "^2.3.1"
+  }
+}
